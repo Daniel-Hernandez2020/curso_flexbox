@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo flexbox</title>
+     <style>
+         .container{
+            background-color: #333;
+            /*display: flex; Con display flex los flex container se comportan como elementos 
+                             de bloque con respecto a los elementos que tienen  a su alrededor*/
 
+            display: inline-flex; /*De esta forma los flex container se comportan como elemento de 
+                                    de linea respeto de los elementos que tienen qa su alrededor*/                 
+
+         }
+
+         .item{
+
+            background-color: #666;
+
+         }
+     </style>   
+
+</head>
+<body>
+    
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    
+</body>
+</html>
