@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo flexbox</title>
+     <style>
+
+        /*Reseteamos el tamaño de la caja a border-box*/
+        *,
+        *::after,
+        *::before{
+
+            box-sizing: border-box;
+
+        }
+
+         .container{
+            background-color: #333;
+            height: 30vh;
+            display: flex; 
+
+
+            /*Flexbox es unidimensional, es flex-direction quien determina si manejaremos
+              filas o columnas
+                flex-direction: row / row-reverse / column/ column-reverse; 
+            */
+
+            
+            /*flex-direction: row;Este es un valor por defecto*/
+
+            flex-direction: column; /*Al poner direccion en columna sera el alto quien determine
+                                      cuantos elementos habra en una columna y aunque modifiquemos el
+                                    ancho siempre habra el mismo numero de elementos con diferente ancho en una
+                                    columna*/
+
+            /*flex-wrap: nowrap; nowrap - Es el valor por defecto de esta propiedad
+               este valor intentare acomodar todos los elementos en una sola linea */
+            /*flex-wrap: nowrap;*/
+
+            /*Los elementos se acomodan en una linea  y si no caben se generan nuevas lineas
+              este valor ya considera el ancho o el alto que debe tener cada elemento hijo*/
+                /*flex-wrap: wrap;*/
+
+            /*Los envuelve pero con el orden inverso*/
+                flex-wrap: wrap-reverse;
+                flex-direction: row-reverse;  
+
+            /*El shorthand flex-flow, permite manejar tanto la direction como el envoltorio */ 
+                flex-flow: column wrap;     
+
+
+         }
+
+         .item{
+
+            border: medium solid #999; 
+            width: 20%;
+            height: 20%;
+            background-color: #666;
+
+         }
+     </style>   
+
+</head>
+<body>
+    
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+
+    <br>
+
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+
+    <br>
+    <section class="container">
+        <article class="item">Item 1</article>
+        <article class="item">Item 2</article>
+        <article class="item">Item 3</article>
+        <article class="item">Item 4</article>
+        <article class="item">Item 5</article>
+        <article class="item">Item 6</article>
+        <article class="item">Item 7</article>
+        <article class="item">Item 8</article>
+        <article class="item">Item 9</article>
+        <article class="item">Item 10</article>
+        <article class="item">Item 11</article>
+        <article class="item">Item 12</article>
+        <article class="item">Item 13</article>
+        <article class="item">Item 14</article>
+        <article class="item">Item 15</article>
+        <article class="item">Item 16</article>
+        <article class="item">Item 17</article>
+        <article class="item">Item 18</article>
+        <article class="item">Item 19</article>
+    </section>
+
+
+    
+</body>
+</html>
