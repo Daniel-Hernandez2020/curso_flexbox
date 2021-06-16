@@ -1,0 +1,32 @@
+/*Reseteamos el tamaño de la caja a border-box*/
+*,
+*::after,
+*::before{
+
+    box-sizing: border-box;
+
+}
+
+ .container{
+    background-color: #333;
+    height: 30vh;
+    display: flex; 
+    
+    flex-flow: column wrap;
+    
+    /*Define la alineaciond de los elementos hijos respecto al 
+      main axis. flex-start - Es el valor por defecto*/
+    justify-content: space-evenly; /*flex-star | center | flex-end | space-between | space-around
+                                   | space-evenly*/
+
+
+ }
+
+ .item{
+
+    border: medium solid #999; 
+    width: 20%;
+    height: 20%;
+    background-color: #666;
+
+ }
