@@ -1,0 +1,62 @@
+
+*,
+*::after,
+*::before{
+
+    box-sizing: border-box;
+
+}
+
+ .container{
+    background-color: #333;
+    height: 30vh;
+    display: flex; 
+    
+    flex-flow: column wrap;
+    
+    
+    justify-content: flex-start;
+
+    /*!!align-item: Actua sobre todas las lineas de flex-item que se generen, si se generan mas de una linea
+                    el espacio del flex-container se divide equitativamente y las propiedades de align-items
+                    actuan sobre cada linea de la forma correspondiente;*/
+    
+    /*Los hijos del flex-container se van a estirar en el eje secundario al
+    tamaño del elemento padre, este es el valor por defecto */
+        /*align-items: stretch;*/
+
+    /*Con baseline el texto de los flex-items se alinean a la misma altura sin importar el tamaño
+      del font-size.
+      Esta alineacion se aplica a todas las lineas que se generen de flex-items si usamos flex-wrap: wrap*/
+        /*align-items: baseline;*/
+        
+   /*Con flex-start si hay dos lineas el espacio se divide en 2 y asi sucesivamente y los elementos de cada
+   linea se colocaran al principio de ese espacion correspondiente, es decir se colocara al principio de cada
+   division*/
+        /*align-items: flex-start;*/
+        
+   align-items: stretch;  
+   
+   /*align-content - Define la alineacion de los hijos en el eje transversal(cross axis), no funciona cuando
+      los hijos estan en una sola linea, esta propiedad trata a todas las filas como un bloque;
+      align-content: nos servira solamente cuando el valor de wrap sea wrap o wrap-reverse;*/
+      align-content: stretch;
+ }
+
+ .item{
+
+    border: medium solid #999; 
+    /*width: 20%;*/
+    /*height: 20%;*/ /*No puede tener alto definido si quieres usar stretch*/
+    background-color: #666;
+
+ }
+
+ /*.item:nth-child(2),
+ .item:nth-child(17){
+
+
+    font-size: 250%;
+
+
+ }*/
