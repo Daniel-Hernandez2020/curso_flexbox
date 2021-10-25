@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before{
+
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+main{/*No es necesario crear una clase main, recordar que un documento html
+    solo deberia tener main que representa el contenido principal*/
+    flex-grow:1;
+
+}
+
+body{
+
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+
+.titulares{
+
+    padding: 1rem;
+    background-color: #222;
+    color: #EEE;
+
+}
